@@ -1,8 +1,16 @@
+# ============================================================
+# DevOps For BigData With CI/CD
+# Static Website Hosting on AWS S3 using Terraform
+# ============================================================
+
 # -----------------------------------------------------------
 # STEP 1: Setup AWS Provider
 # -----------------------------------------------------------
 provider "aws" {
-  region = var.aws_region
+    region = "us-east-1" 
+    access_key = "your key"  
+    secret_key = "your secret"
+
 }
 
 terraform {
@@ -29,11 +37,11 @@ terraform {
 # STEP 2: Create Empty Bucket
 # -----------------------------------------------------------
 resource "aws_s3_bucket" "static_site" {
-  bucket        = "mohamed_tousif_portfolio"
+  bucket        = "mohamed-tousif-portfolio"
   force_destroy = true
 
   tags = {
-    Name        = "mohamed_tousif_portfolio"
+    Name        = "mohamed-tousif-portfolio"
     Environment = var.environment
     ManagedBy   = "Terraform"
   }
@@ -134,3 +142,5 @@ resource "aws_s3_bucket_policy" "static_site" {
 
   depends_on = [aws_s3_bucket_public_access_block.static_site]
 }
+
+
