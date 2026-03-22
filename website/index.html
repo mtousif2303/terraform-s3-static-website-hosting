@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohamed Tousif | SAP Commerce Cloud Lead</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#050510;color:#e2e0f0;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.orb{position:fixed;border-radius:50%;filter:blur(90px);animation:drift 20s ease-in-out infinite;pointer-events:none;z-index:0}
+.orb1{width:550px;height:550px;background:rgba(99,57,255,0.13);top:-150px;left:-150px}
+.orb2{width:450px;height:450px;background:rgba(20,184,166,0.1);bottom:-120px;right:-120px;animation-delay:-7s}
+.orb3{width:350px;height:350px;background:rgba(236,72,153,0.07);top:40%;left:40%;animation-delay:-14s}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-50px) scale(1.06)}66%{transform:translate(-30px,40px) scale(0.94)}}
+.glass{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.glass-md{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px)}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#050510}::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#6339ff,#14b8a6);border-radius:2px}
+.wrap{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:0 36px}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 44px;background:rgba(5,5,16,0.8);border-bottom:1px solid rgba(255,255,255,0.06);backdrop-filter:blur(24px)}
+.nav-logo{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,#a78bfa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;gap:4px;list-style:none;align-items:center}
+.nav-links a{font-size:.73rem;letter-spacing:.09em;text-transform:uppercase;font-weight:500;color:rgba(226,224,240,0.45);padding:6px 14px;border-radius:20px;transition:all .2s}
+.nav-links a:hover{color:#e2e0f0;background:rgba(255,255,255,0.06)}
+.nav-cta{background:linear-gradient(135deg,#6339ff,#14b8a6) !important;color:#fff !important;padding:7px 20px !important;border-radius:20px !important;font-weight:600 !important}
+.hero{min-height:100vh;display:flex;align-items:center;padding:80px 44px 60px;position:relative;z-index:2}
+.hero-inner{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 410px;gap:60px;align-items:center}
+.avail{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:20px;background:rgba(20,184,166,0.1);border:1px solid rgba(20,184,166,0.22);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#5eead4;margin-bottom:28px;opacity:0;animation:up .6s .1s forwards}
+.avail-dot{width:6px;height:6px;border-radius:50%;background:#14b8a6;box-shadow:0 0 8px #14b8a6;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.hero-name{font-family:'Syne',sans-serif;font-size:clamp(3rem,6vw,6rem);font-weight:800;line-height:1;margin-bottom:8px;opacity:0;animation:up .7s .2s forwards}
+.hero-name .first{color:#f8f6ff;display:block}
+.hero-name .last{display:block;background:linear-gradient(135deg,#a78bfa 0%,#38bdf8 50%,#f472b6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:gradShift 5s ease infinite}
+@keyframes gradShift{0%,100%{background-position:0%}50%{background-position:100%}}
+.hero-role{font-size:.97rem;color:rgba(226,224,240,0.45);margin-bottom:24px;opacity:0;animation:up .7s .3s forwards}
+.hero-bio{font-size:.96rem;color:rgba(226,224,240,0.55);line-height:1.9;max-width:520px;margin-bottom:36px;opacity:0;animation:up .7s .4s forwards}
+.hero-bio strong{color:#e2e0f0;font-weight:600}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:up .7s .5s forwards}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:10px;font-size:.8rem;font-weight:600;letter-spacing:.04em;transition:all .25s;border:1px solid transparent;cursor:pointer}
+.btn-g{background:linear-gradient(135deg,#6339ff,#14b8a6);color:#fff;box-shadow:0 4px 24px rgba(99,57,255,0.3)}
+.btn-g:hover{transform:translateY(-2px);box-shadow:0 8px 36px rgba(99,57,255,0.5)}
+.btn-o{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.11);color:rgba(226,224,240,0.75)}
+.btn-o:hover{background:rgba(255,255,255,0.08);transform:translateY(-2px)}
+.hero-card{border-radius:20px;padding:28px;opacity:0;animation:upR .8s .5s forwards}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.stat-box{border-radius:12px;padding:20px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);text-align:center;transition:all .3s}
+.stat-box:hover{background:rgba(255,255,255,0.07);transform:translateY(-3px)}
+.stat-n{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,#a78bfa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:4px}
+.stat-l{font-size:.62rem;color:rgba(226,224,240,0.35);letter-spacing:.1em;text-transform:uppercase}
+.co-list{display:flex;flex-direction:column;gap:7px}
+.co-row{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);transition:all .2s}
+.co-row:hover{background:rgba(167,139,250,0.06);border-color:rgba(167,139,250,0.2)}
+.co-name{font-size:.84rem;font-weight:500;color:#e2e0f0}.co-yr{font-size:.7rem;color:#5eead4}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes upR{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:none}}
+section{padding:100px 0;position:relative;z-index:2}
+.sec-alt{background:rgba(255,255,255,0.015)}
+.sec-tag{display:inline-flex;align-items:center;gap:8px;font-size:.67rem;letter-spacing:.2em;text-transform:uppercase;color:#a78bfa;margin-bottom:10px}
+.sec-tag::before{content:'';width:20px;height:1px;background:linear-gradient(90deg,#a78bfa,transparent)}
+h2.sec-h{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3vw,2.7rem);font-weight:800;color:#f8f6ff;margin-bottom:52px;line-height:1.1}
+h2.sec-h span{background:linear-gradient(135deg,#a78bfa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.rev{opacity:0;transform:translateY(30px);transition:opacity .75s ease,transform .75s ease}
+.rev.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.40s}.d6{transition-delay:.48s}
+.ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ex-card{border-radius:16px;padding:28px 24px;position:relative;overflow:hidden;transition:all .35s;cursor:default}
+.ex-card:hover{transform:translateY(-8px);border-color:rgba(167,139,250,0.3) !important}
+.ex-ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.25rem;background:rgba(99,57,255,0.12);border:1px solid rgba(99,57,255,0.2);transition:all .3s}
+.ex-card:hover .ex-ico{transform:scale(1.1);box-shadow:0 8px 24px rgba(99,57,255,0.3)}
+.ex-num{font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.15em;color:rgba(167,139,250,0.35);margin-bottom:8px}
+.ex-t{font-size:.93rem;font-weight:700;color:#f8f6ff;margin-bottom:10px}
+.ex-b{font-size:.8rem;color:rgba(226,224,240,0.48);line-height:1.8}
+.stack-box{border-radius:20px;padding:36px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.sg-label{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:#a78bfa;padding-bottom:10px;border-bottom:1px solid rgba(167,139,250,0.12);margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:.73rem;font-weight:500;padding:5px 12px;border-radius:20px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);color:rgba(226,224,240,0.55);transition:all .2s;cursor:default}
+.tag:hover{background:rgba(99,57,255,0.1);border-color:rgba(167,139,250,0.3);color:#a78bfa;transform:translateY(-2px)}
+.tl{display:flex;flex-direction:column}
+.tl-item{display:grid;grid-template-columns:185px 1fr;gap:0;padding:46px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.tl-item:first-child{padding-top:0}.tl-item:last-child{border:none;padding-bottom:0}
+.tl-left{padding-right:40px}
+.tl-pill{display:inline-block;font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:#5eead4;background:rgba(20,184,166,0.09);border:1px solid rgba(20,184,166,0.2);padding:4px 10px;border-radius:20px;margin-bottom:10px}
+.tl-co{font-size:.8rem;color:rgba(226,224,240,0.38);line-height:1.6}
+.tl-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,#a78bfa,#38bdf8);margin-top:18px;box-shadow:0 0 16px rgba(167,139,250,0.6)}
+.tl-role{font-family:'Syne',sans-serif;font-size:1.28rem;font-weight:700;color:#f8f6ff;margin-bottom:12px;line-height:1.2}
+.tl-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.tl-tag{font-size:.63rem;letter-spacing:.07em;text-transform:uppercase;font-weight:600;color:#a78bfa;border:1px solid rgba(167,139,250,0.22);padding:3px 10px;border-radius:4px;background:rgba(167,139,250,0.06)}
+.tl-ul{list-style:none;display:flex;flex-direction:column}
+.tl-ul li{font-size:.86rem;color:rgba(226,224,240,0.52);line-height:1.8;padding:5px 0 5px 22px;position:relative}
+.tl-ul li::before{content:'\25B8';position:absolute;left:0;top:6px;font-size:.8rem;background:linear-gradient(135deg,#a78bfa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.tl-ul li b{color:#ddd9ef;font-weight:600}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.cert{display:flex;align-items:flex-start;gap:14px;padding:20px;border-radius:14px;transition:all .3s}
+.cert:hover{background:rgba(255,255,255,0.06) !important;border-color:rgba(167,139,250,0.25) !important;transform:translateY(-3px)}
+.cert-ico{width:40px;height:40px;flex-shrink:0;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.9rem;background:rgba(99,57,255,0.1);border:1px solid rgba(99,57,255,0.18)}
+.cert-name{font-size:.82rem;font-weight:500;color:#ddd9ef;line-height:1.5;margin-bottom:6px}
+.cert-meta{display:flex;gap:8px;align-items:center}
+.cert-by{font-size:.67rem;font-weight:700;background:linear-gradient(135deg,#a78bfa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cert-yr{font-size:.67rem;color:rgba(226,224,240,0.3)}
+.contact-sec{padding:100px 40px 80px;text-align:center;position:relative;z-index:2}
+.c-title{font-family:'Syne',sans-serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:800;color:#f8f6ff;margin-bottom:14px}
+.c-title span{background:linear-gradient(135deg,#a78bfa,#38bdf8,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:gradShift 5s ease infinite}
+.c-sub{font-size:.97rem;color:rgba(226,224,240,0.4);max-width:460px;margin:0 auto 48px}
+.c-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:44px}
+.c-link{display:flex;align-items:center;gap:10px;padding:12px 22px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);font-size:.83rem;font-weight:500;color:rgba(226,224,240,0.65);transition:all .25s}
+.c-link:hover{background:rgba(99,57,255,0.09);border-color:rgba(167,139,250,0.28);color:#e2e0f0;transform:translateY(-3px);box-shadow:0 8px 24px rgba(99,57,255,0.15)}
+.c-cta{display:inline-flex;align-items:center;gap:10px;padding:16px 40px;border-radius:12px;background:linear-gradient(135deg,#6339ff,#14b8a6);color:#fff;font-size:.9rem;font-weight:700;letter-spacing:.04em;box-shadow:0 8px 32px rgba(99,57,255,0.35);transition:all .3s}
+.c-cta:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(99,57,255,0.5)}
+footer{padding:22px 44px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,0.05);background:#050510;position:relative;z-index:2}
+.f-brand{font-family:'Syne',sans-serif;font-size:.95rem;font-weight:800;background:linear-gradient(135deg,#a78bfa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.f-copy{font-size:.7rem;color:rgba(226,224,240,0.25)}
+.f-links{display:flex;gap:20px}.f-links a{font-size:.7rem;color:rgba(226,224,240,0.3);text-transform:uppercase;letter-spacing:.1em;transition:color .2s}.f-links a:hover{color:#a78bfa}
+@media(max-width:1024px){.ex-grid{grid-template-columns:repeat(2,1fr)}.stack-box{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){nav{padding:0 20px}.nav-links{display:none}.hero{padding:80px 20px 60px}.hero-inner{grid-template-columns:1fr;gap:40px}.wrap{padding:0 20px}section{padding:72px 0}.tl-item{grid-template-columns:1fr}.tl-left{padding-right:0;margin-bottom:18px}.contact-sec{padding:72px 20px 60px}footer{padding:20px;flex-direction:column;align-items:flex-start}}
+@media(max-width:600px){.ex-grid{grid-template-columns:1fr}.cert-grid{grid-template-columns:1fr}.stack-box{grid-template-columns:1fr;padding:24px}.stat-grid{grid-template-columns:1fr}.c-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
+<nav id="nav">
+  <div class="nav-logo">MT</div>
+  <ul class="nav-links">
+    <li><a href="#expertise">Expertise</a></li><li><a href="#stack">Stack</a></li>
+    <li><a href="#experience">Experience</a></li><li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+</nav>
+<div class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="avail"><div class="avail-dot"></div>Open to Senior Roles &middot; Dubai, UAE</div>
+      <h1 class="hero-name"><span class="first">Mohamed</span><span class="last">Tousif</span></h1>
+      <p class="hero-role">SAP Commerce Cloud Lead &nbsp;&middot;&nbsp; Techno-Functional Consultant &nbsp;&middot;&nbsp; Product Owner</p>
+      <p class="hero-bio">With <strong>11 years</strong> of hands-on expertise, I lead enterprise-scale SAP Commerce Cloud implementations across <strong>B2B and B2C</strong> domains &mdash; integrating SAP S/4HANA, CRM, BTP/CPI and delivering seamless digital commerce platforms for global clients.</p>
+      <div class="hero-btns">
+        <a href="https://www.linkedin.com/in/mohamedtousif/" target="_blank" class="btn btn-g"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>LinkedIn</a>
+        <a href="https://github.com/mtousif2303" target="_blank" class="btn btn-o"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
+        <a href="/cdn-cgi/l/email-protection#097d667c7a606f303e3d3a496e64686065276a6664" class="btn btn-o">&#9993; Email Me</a>
+      </div>
+    </div>
+    <div class="hero-card glass-md">
+      <div class="stat-grid">
+        <div class="stat-box"><div class="stat-n">11</div><div class="stat-l">Years Exp</div></div>
+        <div class="stat-box"><div class="stat-n">11</div><div class="stat-l">Certifications</div></div>
+        <div class="stat-box"><div class="stat-n">B2B</div><div class="stat-l">Enterprise</div></div>
+        <div class="stat-box"><div class="stat-n">B2C</div><div class="stat-l">Consumer</div></div>
+      </div>
+      <div class="co-list">
+        <div class="co-row"><span class="co-name">Virgin Megastore</span><span class="co-yr">2023 &ndash; Present</span></div>
+        <div class="co-row"><span class="co-name">Deloitte USI</span><span class="co-yr">2020 &ndash; 2023</span></div>
+        <div class="co-row"><span class="co-name">IBM</span><span class="co-yr">2018 &ndash; 2019</span></div>
+        <div class="co-row"><span class="co-name">Reliance Industries</span><span class="co-yr">2016 &ndash; 2018</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="expertise"><div class="wrap">
+  <div class="rev"><div class="sec-tag">Core Expertise</div><h2 class="sec-h">What I <span>Bring to the Table</span></h2></div>
+  <div class="ex-grid">
+    <div class="ex-card glass rev d1"><div class="ex-ico">&#128722;</div><div class="ex-num">01</div><div class="ex-t">E-Commerce &amp; Business Strategy</div><div class="ex-b">Deep expertise in B2B/B2C digital commerce, customer experience optimisation, and best practices to enhance platform performance and user engagement.</div></div>
+    <div class="ex-card glass rev d2"><div class="ex-ico" style="background:rgba(20,184,166,.12);border-color:rgba(20,184,166,.2)">&#9881;&#65039;</div><div class="ex-num">02</div><div class="ex-t">Techno-Functional Leadership</div><div class="ex-b">Deep proficiency in Java, SAP Hybris/Commerce Cloud, cloud architectures &mdash; bridging business requirements with scalable engineering delivery.</div></div>
+    <div class="ex-card glass rev d3"><div class="ex-ico" style="background:rgba(244,114,182,.1);border-color:rgba(244,114,182,.2)">&#128279;</div><div class="ex-num">03</div><div class="ex-t">Seamless Integrations</div><div class="ex-b">SAP S/4HANA, SAP CRM, D365 ERP, SAP CPI/BTP, DataHub, SAP AOP/SPP &mdash; ensuring smooth interoperability and business continuity.</div></div>
+    <div class="ex-card glass rev d4"><div class="ex-ico" style="background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.2)">&#128179;</div><div class="ex-num">04</div><div class="ex-t">Payments &amp; Transactions</div><div class="ex-b">Implemented Paytm, Checkout.com, and multiple payment gateways &mdash; optimising transaction security, performance, and compliance.</div></div>
+    <div class="ex-card glass rev d5"><div class="ex-ico" style="background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.2)">&#128101;</div><div class="ex-num">05</div><div class="ex-t">Team Leadership &amp; Delivery</div><div class="ex-b">Leading cross-functional teams, managing end-to-end project deliveries, running Agile ceremonies in fast-paced global environments.</div></div>
+    <div class="ex-card glass rev d6"><div class="ex-ico" style="background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.2)">&#129302;</div><div class="ex-num">06</div><div class="ex-t">Generative AI &amp; Innovation</div><div class="ex-b">SAP Certified Generative AI Developer. Applying SAP CX AI Toolkit and AI-based personalisation to drive next-gen commerce experiences.</div></div>
+  </div>
+</div></section>
+<section id="stack" class="sec-alt"><div class="wrap">
+  <div class="rev"><div class="sec-tag">Technologies</div><h2 class="sec-h">Technical <span>Stack</span></h2></div>
+  <div class="stack-box glass rev">
+    <div><div class="sg-label">SAP Commerce</div><div class="tags"><span class="tag">Hybris 6.2&ndash;CCv2</span><span class="tag">SAP CX AI</span><span class="tag">Datahub</span><span class="tag">WCMS</span><span class="tag">BackOffice</span><span class="tag">HMC</span><span class="tag">SOLR</span></div></div>
+    <div><div class="sg-label">Languages &amp; Frameworks</div><div class="tags"><span class="tag">Java</span><span class="tag">J2EE</span><span class="tag">Spring Boot</span><span class="tag">Spring Cloud</span><span class="tag">Microservices</span><span class="tag">Hibernate</span><span class="tag">Python</span></div></div>
+    <div><div class="sg-label">Integrations</div><div class="tags"><span class="tag">SAP S/4HANA</span><span class="tag">SAP CRM</span><span class="tag">BTP/CPI</span><span class="tag">D365 ERP</span><span class="tag">REST APIs</span><span class="tag">cXML/Ariba</span><span class="tag">RFC</span></div></div>
+    <div><div class="sg-label">Cloud &amp; Tools</div><div class="tags"><span class="tag">Azure</span><span class="tag">GCP</span><span class="tag">Oracle</span><span class="tag">MySQL</span><span class="tag">Git/Bitbucket</span><span class="tag">SonarQube</span><span class="tag">Tomcat</span></div></div>
+  </div>
+</div></section>
+<section id="experience"><div class="wrap">
+  <div class="rev"><div class="sec-tag">Career Journey</div><h2 class="sec-h">Professional <span>Experience</span></h2></div>
+  <div class="tl">
+    <div class="tl-item rev"><div class="tl-left"><div class="tl-pill">Dec 2023 &ndash; Present</div><div class="tl-co">Virgin Megastore<br/>Dubai, UAE</div><div class="tl-dot"></div></div><div><div class="tl-role">SAP Commerce Lead &amp; Product Owner</div><div class="tl-tags"><span class="tl-tag">MENA Region</span><span class="tl-tag">B2B &amp; B2C</span><span class="tl-tag">CCv2</span><span class="tl-tag">Product Owner</span></div><ul class="tl-ul"><li>Acting as <b>Product Owner</b>: define backlog, prioritise user stories, run sprint planning and stakeholder demos</li><li>Lead SAP Commerce Cloud <b>platform strategy</b>, architecture decisions, and go-live planning for MENA</li><li>Manage end-to-end production support, deployment pipelines, and <b>SLA-driven incident resolution</b></li><li>Led <b>Checkout.com payment integration</b> &mdash; payment flows, tokenisation, and order capture end-to-end</li><li>Designed custom <b>Promotion Engine rules</b> for complex pricing, discount, and loyalty scenarios</li></ul></div></div>
+    <div class="tl-item rev"><div class="tl-left"><div class="tl-pill">Jan 2020 &ndash; Nov 2023</div><div class="tl-co">Deloitte USI<br/>Bengaluru, India</div><div class="tl-dot"></div></div><div><div class="tl-role">DC Senior Consultant &ndash; SAP Commerce</div><div class="tl-tags"><span class="tl-tag">MAKRO</span><span class="tl-tag">Perkins Engine</span><span class="tl-tag">CAT</span><span class="tl-tag">S/4HANA</span></div><ul class="tl-ul"><li><b>MAKRO (B2B/B2C):</b> Datanomics payment API, SAP CRM onboarding, Datahub-ERP consignment posting, cancellation APIs</li><li><b>Perkins Engine (B2B):</b> Synchronous RFC integrations with S/4HANA for live stock, pricing and delivery tracking</li><li>Refactored Order History page load from <b>60 seconds to 20 seconds</b>; secured successful CCv2 cloud go-live</li><li><b>CAT (B2B/B2C):</b> Config management portal, 3rd-party XML posting, cloud deployments, legacy data cleanup</li></ul></div></div>
+    <div class="tl-item rev"><div class="tl-left"><div class="tl-pill">Dec 2018 &ndash; Dec 2019</div><div class="tl-co">IBM<br/>Bengaluru, India</div><div class="tl-dot"></div></div><div><div class="tl-role">Consultant &ndash; SAP Commerce</div><div class="tl-tags"><span class="tl-tag">SMS Equipment</span><span class="tl-tag">Koopman B2C</span><span class="tl-tag">Ariba</span></div><ul class="tl-ul"><li><b>SMS Equipment:</b> cXML/SAP Ariba integration, B2B punchout portal, WCMS and email template customisation</li><li><b>Koopman B2C:</b> Hot folder configurations, cart/PDP API performance fixes, BackOffice migration</li></ul></div></div>
+    <div class="tl-item rev"><div class="tl-left"><div class="tl-pill">Oct 2016 &ndash; Dec 2018</div><div class="tl-co">Reliance Industries<br/>Bengaluru, India</div><div class="tl-dot"></div></div><div><div class="tl-role">Software Engineer &ndash; SAP Hybris</div><div class="tl-tags"><span class="tl-tag">Reliance Digital</span><span class="tl-tag">B2C</span><span class="tl-tag">SOLR</span></div><ul class="tl-ul"><li>Reliance Digital B2C: SOLR value providers, gift card functionality, HMC customisation, REST APIs for credit note points</li></ul></div></div>
+  </div>
+</div></section>
+<section id="certifications" class="sec-alt"><div class="wrap">
+  <div class="rev"><div class="sec-tag">Credentials</div><h2 class="sec-h">Certifications &amp; <span>Licences</span></h2></div>
+  <div class="cert-grid">
+    <div class="cert glass rev d1"><div class="cert-ico">&#127942;</div><div><div class="cert-name">SAP Certified Professional &ndash; Developer &ndash; SAP Commerce Cloud</div><div class="cert-meta"><span class="cert-by">SAP</span><span class="cert-yr">Aug 2025</span></div></div></div>
+    <div class="cert glass rev d2"><div class="cert-ico">&#129302;</div><div><div class="cert-name">SAP Certified &ndash; SAP Generative AI Developer</div><div class="cert-meta"><span class="cert-by">SAP</span><span class="cert-yr">Aug 2025</span></div></div></div>
+    <div class="cert glass rev d3"><div class="cert-ico">&#10024;</div><div><div class="cert-name">Enabling AI-Based Personalized Recommendations &ndash; SAP Commerce Cloud</div><div class="cert-meta"><span class="cert-by">SAP</span><span class="cert-yr">Mar 2025</span></div></div></div>
+    <div class="cert glass rev d4"><div class="cert-ico">&#128295;</div><div><div class="cert-name">Utilizing SAP CX AI Toolkit for SAP Commerce Cloud</div><div class="cert-meta"><span class="cert-by">SAP</span><span class="cert-yr">Mar 2025</span></div></div></div>
+    <div class="cert glass rev d1"><div class="cert-ico">&#9729;&#65039;</div><div><div class="cert-name">Data Engineering with Azure &amp; GCP</div><div class="cert-meta"><span class="cert-by">Grow Data Skills</span><span class="cert-yr">Feb 2026</span></div></div></div>
+    <div class="cert glass rev d2"><div class="cert-ico">&#128013;</div><div><div class="cert-name">Complete Python Bootcamp 2025</div><div class="cert-meta"><span class="cert-by">Udemy</span><span class="cert-yr">Apr 2025</span></div></div></div>
+    <div class="cert glass rev d3"><div class="cert-ico">&#128161;</div><div><div class="cert-name">Generative AI at SAP</div><div class="cert-meta"><span class="cert-by">SAP openSAP</span><span class="cert-yr">Jun 2024</span></div></div></div>
+    <div class="cert glass rev d4"><div class="cert-ico">&#9749;</div><div><div class="cert-name">Microservices with Java Spring Boot &amp; Spring Cloud</div><div class="cert-meta"><span class="cert-by">Udemy</span><span class="cert-yr">Jun 2023</span></div></div></div>
+    <div class="cert glass rev d1"><div class="cert-ico">&#127919;</div><div><div class="cert-name">SAP Certified Product Support Specialist &ndash; SAP Commerce</div><div class="cert-meta"><span class="cert-by">SAP</span><span class="cert-yr">Mar 2021</span></div></div></div>
+    <div class="cert glass rev d2"><div class="cert-ico">&#128220;</div><div><div class="cert-name">SAP Certified Application Associate &ndash; SAP Commerce Cloud Business User</div><div class="cert-meta"><span class="cert-by">SAP</span><span class="cert-yr">Mar 2021</span></div></div></div>
+    <div class="cert glass rev d3"><div class="cert-ico">&#11088;</div><div><div class="cert-name">SAP Certified Development Professional &ndash; SAP Commerce Cloud 1905</div><div class="cert-meta"><span class="cert-by">SAP</span><span class="cert-yr">Feb 2021</span></div></div></div>
+  </div>
+</div></section>
+<div class="contact-sec" id="contact">
+  <div class="rev">
+    <div class="sec-tag" style="justify-content:center">Get In Touch</div>
+    <div class="c-title">Let's Build Something <span>Amazing</span></div>
+    <p class="c-sub">Open to senior SAP Commerce roles, consulting engagements, and enterprise digital commerce projects across MENA and globally.</p>
+    <div class="c-links">
+      <a href="/cdn-cgi/l/email-protection#a1d5ced4d2c8c798969592e1c6ccc0c8cd8fc2cecc" class="c-link"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg><span class="__cf_email__" data-cfemail="8afee5fff9e3ecb3bdbeb9caede7ebe3e6a4e9e5e7">[email&#160;protected]</span></a>
+      <a href="https://www.linkedin.com/in/mohamedtousif/" target="_blank" class="c-link"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>linkedin.com/in/mohamedtousif</a>
+      <a href="https://github.com/mtousif2303" target="_blank" class="c-link"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>github.com/mtousif2303</a>
+      <a href="tel:+971581274134" class="c-link"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>+971 581 274 134</a>
+    </div>
+    <a href="/cdn-cgi/l/email-protection#d7a3b8a2a4beb1eee0e3e497b0bab6bebbf9b4b8ba" class="c-cta">Start a Conversation <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</div>
+<footer>
+  <div class="f-brand">Mohamed Tousif</div>
+  <div class="f-copy">&copy; 2025 &middot; SAP Commerce Cloud Lead &middot; Dubai, UAE</div>
+  <nav class="f-links"><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#certifications">Certs</a><a href="#contact">Contact</a></nav>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+window.addEventListener('scroll',()=>{document.getElementById('nav').style.boxShadow=window.scrollY>40?'0 4px 40px rgba(0,0,0,0.5)':'none'});
+document.addEventListener('mousemove',e=>{const x=(e.cli
